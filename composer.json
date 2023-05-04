@@ -1,0 +1,20 @@
+{
+    "name": "neighborhoods/buphalo-templates",
+    "description": "A collection of versioned, re-usable templates, annotation processors, and utility classes for Buphalo.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Neighborhoods\\BuphaloTemplates\\": ["src/", "fab/"]
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacques Marcotte",
+            "email": "jacques.marcotte@neighborhoods.com"
+        }
+    ],
+    "require": {
+        "neighborhoods/buphalo": "^2.0"
+    }
+}
