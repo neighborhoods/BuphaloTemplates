@@ -1,0 +1,28 @@
+actors:
+  # Primary Actor
+  <PrimaryActorName>.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName.php
+    annotation_processors:
+      ClassPropertiesAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\ClassPropertiesAndAccessorsByArray
+        static_context_record:
+          properties:
+            constants:
+              data_type: \Neighborhoods\BuphaloTemplates\Php81\ClassDefinition\V1\Constant\SetInterface
+            properties:
+              data_type: \Neighborhoods\BuphaloTemplates\Php81\ClassDefinition\V1\Property\SetInterface
+            identity_field:
+              data_type: ?string
+  <PrimaryActorName>Interface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorNameInterface.php
+    annotation_processors:
+      ClassInterfaceConstantsAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\InterfaceConstantsAndAccessorsByArray
+        static_context_record:
+          properties:
+            constants:
+              data_type: \Neighborhoods\BuphaloTemplates\Php81\ClassDefinition\V1\Constant\SetInterface
+            properties:
+              data_type: \Neighborhoods\BuphaloTemplates\Php81\ClassDefinition\V1\Property\SetInterface
+            identity_field:
+              data_type: ?string

@@ -1,0 +1,35 @@
+actors:
+  # Primary Actor
+  <PrimaryActorName>.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName.php
+    annotation_processors:
+      ClassPropertiesAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\ClassPropertiesAndAccessorsByArray
+        static_context_record:
+          properties:
+            name:
+              data_type: string
+            value:
+              data_type: mixed
+  <PrimaryActorName>Interface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorNameInterface.php
+    annotation_processors:
+      ClassInterfaceConstantsAndAccessors:
+        processor_fqcn: \Neighborhoods\BuphaloTemplates\Php81\AnnotationProcessors\ClassDefinition\V1\InterfaceConstantsAndAccessorsByArray
+        static_context_record:
+          properties:
+            name:
+              data_type: string
+            value:
+              data_type: mixed
+  <PrimaryActorName>/Set.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName/Set.php
+    annotation_processors:
+      Set.getIdentifierContent:
+        processor_fqcn: \Neighborhoods\Buphalo\V2\AnnotationProcessors\SimpleString
+        static_context_record:
+          string: "return $value->getName();"
+  <PrimaryActorName>/SetInterface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName/SetInterface.php
+  <PrimaryActorName>/CollectionInterface.php:
+    template: Php81/GeneralActors/V1/PrimaryActorName/CollectionInterface.php
